@@ -13,37 +13,62 @@
 </head>
 <body>
 
-  <!-- Agrega el navbar de Bootstrap -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Mi sitio web personal</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Acerca de</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Portafolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <div class="wrapper">
+    <!-- Barra lateral -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Mi sitio web personal</h3>
+      </div>
 
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Inicio</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#">Subinicio 1</a>
+            </li>
+            <li>
+              <a href="#">Subinicio 2</a>
+            </li>
+            <li>
+              <a href="#">Subinicio 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Acerca de</a>
+        </li>
+        <li>
+          <a href="#">Portafolio</a>
+        </li>
+        <li>
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
 
-  <div class="container my-5">
+    <!-- Contenido principal -->
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
 
-    <h1>Bienvenidos a mi sitio web personal</h1>
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span>Barra lateral</span>
+          </button>
 
-    <p>En esta página, encontrarás información sobre mi, mi trabajo y mis intereses. También puedes ver mi portafolio y contactarme si estás interesado en colaborar.</p>
+        </div>
+      </nav>
 
+      <div class="container my-5">
+
+        <h1>Bienvenidos a mi sitio web personal</h1>
+
+        <p>En esta página, encontrarás información sobre mi, mi trabajo y mis intereses. También puedes ver mi portafolio y contactarme si estás interesado en colaborar.</p>
+
+      </div>
+
+    </div>
   </div>
 
   <!-- Agrega los enlaces a los archivos de Bootstrap JS -->
