@@ -1,0 +1,39 @@
+/* Estilos para el navbar */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+}
+
+/* Estilos para el contenido */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* Estilos para el fondo */
+body {
+  background: linear-gradient(135deg, #00c3ff, #0072ff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
