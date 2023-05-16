@@ -46,3 +46,11 @@ p {
   max-width: 800px;
   margin: 0 auto;
 }
+.header-image {
+  background-image: url("codee.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.white-text {
+  color: white;
+}
