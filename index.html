@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi sitio web personal</title>
@@ -10,106 +11,287 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <!-- Agrega el enlace a WOW.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- Agrega el enlace a nuestro archivo CSS personalizado -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Personaliza los estilos aquí */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222831;
+    }
+
+    .navbar {
+      background-color: #222831;
+      border-bottom: 1px solid #EEEEEE;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #EEEEEE;
+    }
+
+    .navbar-nav .nav-link {
+      color: #EEEEEE;
+    }
+
+    .header {
+      background-color: #393E46;
+      color: #EEEEEE;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .about-me {
+      padding: 80px 0;
+      background-color: #393E46;
+      color: #EEEEEE;
+    }
+
+    .about-me .row {
+      align-items: center;
+    }
+
+    .about-me .col-lg-6 {
+      margin-bottom: 30px;
+    }
+
+    .about-me .square-image {
+      width: 100%;
+      padding-bottom: 100%; /* Esto establece una relación de aspecto 1:1 */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-me .square-image img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-me p {
+      margin-bottom: 20px;
+    }
+
+    .portfolio {
+      padding: 80px 0;
+      background-color: #393E46;
+      color: #EEEEEE;
+    }
+
+    .portfolio .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .portfolio .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio .card img {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .portfolio .card-body {
+      background-color: #222831;
+    }
+
+    .portfolio .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .portfolio .card-text {
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #00ADB5;
+      border-color: #00ADB5;
+    }
+
+    .btn-primary:hover {
+      background-color: #EEEEEE;
+      border-color: #EEEEEE;
+    }
+
+    footer {
+      background-color: #393E46;
+      color: #EEEEEE;
+    }
+
+    .footer-icons {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .footer-icons a {
+      color: #EEEEEE;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Agrega el navbar de Bootstrap -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Mi sitio web personal</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active mr-3">
-          <a class="nav-link" href="#">Inicio</a>
-        </li>
-        <li class="nav-item mr-3">
-          <a class="nav-link" href="#">Acerca de mi</a>
-        </li>
-        <li class="nav-item mr-3">
-          <a class="nav-link" href="#">Portafolio</a>
-        </li>
-        <li class="nav-item mr-3">
-          <a class="https://github.com/JuanesJB" href="#">GitHub</a>
-        </li>
-      </ul>
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi sitio web personal</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active mr-3">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Acerca de mí</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Portafolio</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="https://github.com/JuanesJB" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <header class="bg-dark text-white text-center py-5 header-image">
+  <section class="about-me">
     <div class="container">
-      <h1 class="display-4 white-text animate__animated animate__fadeInDown">Bienvenidos a mi sitio web personal</h1>
-      <p class="lead animate__animated animate__fadeInUp">En esta página, encontrarás información sobre mí, mi trabajo y mis intereses. También puedes ver mi portafolio y contactarme si estás interesado en colaborar.</p>
-    </div>
-  </header>
-  
-
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4 wow animate__animated animate__fadeIn">Acerca de mí</h2>
       <div class="row">
         <div class="col-lg-6 wow animate__animated animate__fadeInLeft">
-          <img src="IMG_7396.JPG" alt="Foto de perfil" class="img-fluid">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="IMG_7396.JPG" alt="Imagen 1">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="IMG3.JPG" alt="Imagen 2">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="IMG2.JPG" alt="Imagen 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
         </div>
         <div class="col-lg-6 wow animate__animated animate__fadeInRight">
-          <p>Soy un apasionado desarrollador web con experiencia en HTML, CSS y JavaScript. Me encanta crear sitios web hermosos y funcionales que brinden una gran experiencia al usuario.</p>
-          <p>En mi tiempo libre, me gusta mantenerme al día con las últimas tendencias en diseño web y aprender nuevas tecnologías.</p>
-          </div>
-          </div>
-          </div>
-            </section>
-            <section class="bg-light py-5">
-              <div class="container w-100">
-                <h2 class="text-center mb-4 wow animate__animated animate__fadeIn">Portafolio</h2>
-                <div class="row">
-                  <div class="col-lg-4 wow animate__animated animate__fadeInUp">
-                    <div class="card mb-4">
-                      <img src="project4.jpg" class="card-img-top" alt="Proyecto 4">
-                      <div class="card-body">
-                        <h5 class="card-title">Proyecto 4</h5>
-                        <p class="card-text">Breve descripción del proyecto 4.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 wow animate__animated animate__fadeInUp">
-                    <div class="card mb-4">
-                      <img src="project5.jpg" class="card-img-top" alt="Proyecto 5">
-                      <div class="card-body">
-                        <h5 class="card-title">Proyecto 5</h5>
-                        <p class="card-text">Breve descripción del proyecto 5.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 wow animate__animated animate__fadeInUp">
-                    <div class="card mb-4">
-                      <img src="project6.jpg" class="card-img-top" alt="Proyecto 6">
-                      <div class="card-body">
-                        <h5 class="card-title">Proyecto 6</h5>
-                        <p class="card-text">Breve descripción del proyecto 6.</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          <!-- Agrega los scripts de jQuery y Bootstrap -->
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        </body>
-        </html>
-            <!-- Inicializa WOW.js -->
-            <script>
-              new WOW().init();
-            </script>
-            <!-- Agregaos scripts de jQuery y Bootstrap -->
+          <h2 class="mb-4">Acerca de mí</h2>
+          <p>¡Hola! Soy Juan Jiménez, un estudiante de ingeniería de sistemas y computación de la Universidad de los Andes. Tengo 21 años y me apasiona todo lo relacionado con la tecnología y la informática. Estoy constantemente aprendiendo y explorando nuevas formas de mejorar mis habilidades en este campo.<p>
+          <a href="#" class="btn btn-primary">Más información</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="text-center mb-4">Mi portafolio</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+          <div class="card">
+            <img src="project1.jpg" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Descripción del proyecto 1.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+          <div class="card">
+            <img src="project2.jpg" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2</h5>
+              <p class="card-text">Descripción del proyecto 2.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+          <div class="card">
+            <img src="project3.jpg" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Descripción del proyecto 3.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow animate__animated animate__fadeInUp">
+          <h2 class="mb-4">Mis Redes Sociales</h2>
+          <p>¡Sígueme en mis redes sociales para estar al tanto de mis últimas actualizaciones!</p>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.instagram.com/juanes_121210/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="j.jimenezb@uniandes.edu.co" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="container">
+      <p class="text-center">
+        &copy; 2023 Mi sitio web personal. Todos los derechos reservados.
+        <a href="j.jimenezb@uniandes.edu.co" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/juanes_121210/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </p>
+    </div>
+  </footer>
+  
+
+  <!-- Agrega los scripts de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Inicializa la biblioteca WOW.js -->
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
