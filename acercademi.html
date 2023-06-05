@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi sitio web personal</title>
+  <!-- Agrega los enlaces a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Agrega el enlace a Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Agrega el enlace a WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- Agrega el enlace a nuestro archivo CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Doctor+Glitch&display=swap" rel="stylesheet">
+
+  <style>
+    /* Personaliza los estilos aquí */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #393E46;
+      color: white; /* Cambio de color de texto a blanco */
+    }
+
+    /* Estilo para la línea divisoria */
+    .divider {
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(to right, transparent, #393E46, transparent);
+      margin: 30px 0;
+    }
+
+    .navbar {
+      background-color: #222831;
+      border-bottom: 1px solid #EEEEEE;
+    }
+
+    .navbar-name {
+      float: left;
+      font-family: 'Doctor Glitch', sans-serif;
+      font-size: 20px;
+      color: white; /* Cambio de color de texto a blanco */
+    }
+
+    .navbar-nav .nav-link {
+      color: #EEEEEE;
+    }
+
+    .header {
+      background-color: #393E46;
+      color: white; /* Cambio de color de texto a blanco */
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .about-me {
+      padding: 80px 0;
+      background-color: #393E46;
+      color: #222831; /* Cambio de color de texto a oscuro */
+      text-align: center; /* Cambio a centrado */
+    }
+
+    .about-me .row {
+      align-items: center;
+    }
+
+    .about-me .col-lg-6 {
+      margin-bottom: 30px;
+    }
+
+    .about-me .square-image {
+      width: 100%;
+      padding-bottom: 100%; /* Esto establece una relación de aspecto 1:1 */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-me .square-image img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 5px solid white; /* Agrega un borde blanco */
+      animation: fadeIn 1s; /* Agrega una animación de fundido */
+    }
+
+    .about-me p {
+      margin-bottom: 20px; /* Aumenta el margen inferior para una mejor distribución */
+    }
+
+    /* Agrega estilos para las nuevas imágenes */
+    .about-me .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .about-me .image-container img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border: 5px solid white; /* Agrega un borde blanco */
+      animation: fadeIn 1s; /* Agrega una animación de fundido */
+    }
+
+    .portfolio {
+      padding: 80px 0;
+      background-color: #393E46;
+      color: #EEEEEE;
+    }
+
+    .portfolio .project {
+      margin-bottom: 30px;
+    }
+
+    .portfolio .project-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio .project-description {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio .project-link {
+      color: #00ADB5;
+      text-decoration: none;
+    }
+
+    .contact {
+      padding: 80px 0;
+      background-color: #393E46;
+      color: #EEEEEE;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .contact .social-icons {
+      margin-bottom: 40px;
+    }
+
+    .contact .social-icons a {
+      color: #EEEEEE;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    /* Media queries para hacer el sitio web responsive */
+    @media (max-width: 767px) {
+      .navbar-name {
+        float: none;
+        text-align: center;
+      }
+
+      .navbar-collapse {
+        justify-content: center;
+      }
+
+      .about-me .row {
+        flex-direction: column;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .about-me .col-lg-6 {
+        margin-bottom: 0;
+      }
+    }
+
+    /* Animación de fundido */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ... -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" width="150" height="40" class="d-inline-block align-top">
+      </a>
+    <!-- ... -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- ... -->
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="acercademi.html">Acerca de mí</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="#">Portafolio</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="https://github.com/JuanesJB" target="_blank">GitHub</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="aboutme.html" onclick="switchLanguage()">English</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ... -->
+</body>
+<script>
+  function switchLanguage() {
+    window.location.href = "indexus.html"; // Reemplaza con la URL de la versión en inglés del sitio
+  }
+</script>
+
+<section id="about" class="about-me">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="image-container">
+            <img src="IMG_0509.JPG" alt="Mi foto de perfil 1" class="wow fadeIn">
+            <img src="IMG_4606.JPG" alt="Mi foto de perfil 2" class="wow fadeIn">
+            <img src="IMG_5042.JPG" alt="Mi foto de perfil 3" class="wow fadeIn">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="wow fadeInLeft" style="color: white;">Sobre mí</h2>
+          <p class="wow fadeInLeft" style="color: white;">
+            Además de mi interés por la tecnología, tengo otras dos pasiones en mi vida: la cocina y el tenis. Me encanta experimentar en la cocina, mezclando ingredientes y creando deliciosos platos. Disfruto especialmente de preparar comidas para mis amigos y familiares, ya que me encanta ver cómo disfrutan de mis creaciones culinarias.
+          </p>
+  
+          <p class="wow fadeInLeft" style="color: white;">
+            El tenis es otro aspecto importante en mi vida. Jugar este deporte me brinda una gran satisfacción y me permite mantenerme activo físicamente. Participar en partidos y torneos me ayuda a mejorar mis habilidades y también a mantener un equilibrio entre el estudio y el deporte.
+          </p>
+  
+          <p class="wow fadeInLeft" style="color: white;">
+            Además de mis intereses personales, también tengo un rol importante como representante de mi departamento para el periodo 2023. Esta posición me permite trabajar de cerca con mis compañeros de carrera, representar sus intereses y contribuir al mejoramiento de la experiencia estudiantil en nuestra universidad.
+          </p>
+  
+          <p class="wow fadeInLeft" style="color: white;">
+            En resumen, soy un estudiante de ingeniería de sistemas y computación, amante de la cocina y el tenis, y comprometido con mi rol como representante de mi departamento. Estoy emocionado por las oportunidades que se presentan en mi camino y listo para enfrentar nuevos desafíos en mi vida académica y personal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<footer>
+  <div class="container">
+    <p class="text-center">
+      &copy; 2023 Mi sitio web personal. Todos los derechos reservados.
+      <a href="j.jimenezb@uniandes.edu.co" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/juanes_121210/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/JuanesJB"><i class="fab fa-github"></i></a>
+    </p>
+  </div>
+</footer>
+
+
+<!-- Agrega los enlaces a Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Inicializa WOW.js -->
+<script>
+  new WOW().init();
+</script>
+
+</html>

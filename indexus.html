@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi sitio web personal</title>
+  <title>My Personal Website</title>
   <!-- Agrega los enlaces a Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!-- Agrega el enlace a Animate.css -->
@@ -160,42 +160,41 @@
   </style>
 </head>
 <body>
-  <!-- ... -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- ... -->
-    <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="Logo" width="150" height="40" class="d-inline-block align-top">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+    <body>
         <!-- ... -->
-        <li class="nav-item mr-3">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item mr-3">
-          <a class="nav-link" href="acercademi.html">Acerca de mí</a>
-        </li>
-        <li class="nav-item mr-3">
-          <a class="nav-link" href="#">Portafolio</a>
-        </li>
-        <li class="nav-item mr-3">
-          <a class="nav-link" href="https://github.com/JuanesJB" target="_blank">GitHub</a>
-        </li>
-        <li class="nav-item mr-3">
-          <a class="nav-link" href="indexus.html" onclick="switchLanguage()">English</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- ... -->
-</body>
-<script>
-  function switchLanguage() {
-    window.location.href = "indexus.html"; // Replace with the URL of the English version of the site
-  }
-</script>
-
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="150" height="40" class="d-inline-block align-top">
+              </a>
+          <!-- ... -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <!-- ... -->
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="indexus.html">Main</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="aboutme.html">About me</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="https://github.com/JuanesJB" target="_blank">GitHub</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="index.html" onclick="switchLanguage()">Español</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- ... -->
+      </body>
+      <script>
+        function switchLanguage() {
+          window.location.href = "index.html"; // Replace with the URL of the English version of the site
+        }
+      </script>
 
 
   <section class="about-me">
@@ -230,9 +229,9 @@
           </div>
         </div>
         <div class="col-lg-6 wow animate__animated animate__fadeInRight">
-          <h2 class="mb-4">Acerca de mí</h2>
-          <p>¡Hola! Soy Juan Jiménez, un estudiante de ingeniería de sistemas y computación de la Universidad de los Andes. Tengo 21 años y me apasiona todo lo relacionado con la tecnología y la informática. Estoy constantemente aprendiendo y explorando nuevas formas de mejorar mis habilidades en este campo.<p>
-          <a href="#" class="btn btn-primary">Más información</a>
+          <h2 class="mb-4">About me</h2>
+          <p>Hello! I'm Juan Jiménez, a student of Systems and Computer Engineering at the University of Los Andes. I'm 21 years old and I'm passionate about everything related to technology and computer science. I'm constantly learning and exploring new ways to improve my skills in this field.<p></p>
+          <a href="aboutme.html" class="btn btn-primary">More info</a>
         </div>
       </div>
     </div>
@@ -244,15 +243,15 @@
   <section class="portfolio">
     <section class="portfolio">
       <div class="container">
-        <h2 class="text-center mb-4">Mi portafolio</h2>
+        <h2 class="text-center mb-4">Portfolio</h2>
         <div class="row">
           <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
             <div class="card">
               <img src="fantasy-soccer@2x.png" class="card-img-top project-img" alt="Proyecto 1">
               <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Aplicación de Fútbol de Fantasía</p>
-                <a href="https://github.com/DPO-S05-camacho-carvajal-jimenez/Proyecto3" class="btn btn-primary" target="_blank">Ver más</a>
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Fantasy Soccer App</p>
+                <a href="https://github.com/DPO-S05-camacho-carvajal-jimenez/Proyecto3" class="btn btn-primary" target="_blank">More info</a>
               </div>
             </div>
           </div>
@@ -260,9 +259,9 @@
             <div class="card">
               <img src="wp11424574.webp" class="card-img-top project-img" alt="Proyecto 2">
               <div class="card-body">
-                <h5 class="card-title">Proyecto 2</h5>
-                <p class="card-text">Página Web de Futbol Club Barcelona</p>
-                <a href="https://github.com/JuanesJB/SW_FirstWebPage-FCB-" class="btn btn-primary" target="_blank">Ver más</a>
+                <h5 class="card-title">project 2</h5>
+                <p class="card-text">FCB website</p>
+                <a href="https://github.com/JuanesJB/SW_FirstWebPage-FCB-" class="btn btn-primary" target="_blank">More info</a>
               </div>
             </div>
           </div>
@@ -270,9 +269,9 @@
             <div class="card">
               <img src="tv-logo-free-vector.jpg" class="card-img-top project-img" alt="Proyecto 3">
               <div class="card-body">
-                <h5 class="card-title">Proyecto 3</h5>
-                <p class="card-text">Aplicación de Gestión de Series</p>
-                <a href="https://github.com/JuanesJB/TallerANGULAR-/tree/main" class="btn btn-primary" target="_blank">Ver más</a>
+                <h5 class="card-title">project 3</h5>
+                <p class="card-text">Series management application</p>
+                <a href="https://github.com/JuanesJB/TallerANGULAR-/tree/main" class="btn btn-primary" target="_blank">More info</a>
               </div>
             </div>
           </div>
@@ -288,8 +287,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow animate__animated animate__fadeInUp">
-          <h2 class="mb-4">Mis Redes Sociales</h2>
-          <p>¡Sígueme en mis redes sociales para estar al tanto de mis últimas actualizaciones!</p>
+        <h2 class="mb-4">My Social Networks</h2>
+        <p>Follow me on my social networks to be aware of my latest updates!</p>
           <ul class="social-icons">
             <li>
               <a href="https://www.instagram.com/juanes_121210/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -307,7 +306,7 @@
   <footer>
     <div class="container">
       <p class="text-center">
-        &copy; 2023 Mi sitio web personal. Todos los derechos reservados.
+        &copy; 2023 My personal website. All rights reserved.
         <a href="j.jimenezb@uniandes.edu.co" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
         <a href="https://www.instagram.com/juanes_121210/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
         <a href="https://github.com/JuanesJB"><i class="fab fa-github"></i></a>
