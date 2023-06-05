@@ -5,8 +5,6 @@ Imagen :<img width="1512" alt="Screenshot 2023-06-04 at 9 18 56 PM" src="https:/
 
 Link al despliegue : https://juanesjb.github.io/JuanEstebanJimenezBenavides/
 
-Lista de tecnologías (versiones exactas y links) usadas para implementar la página (incluyendo bancos de imagenes y/o AIs usadas para generarlas)
-
 Aquí está la lista de tecnologías y versiones exactas utilizadas para implementar la página por el momento :
 
 - Font Awesome 5.15.3: Se utiliza la versión 5.15.3 de Font Awesome para los iconos. Aquí está el enlace: [Font Awesome 5.15.3](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css).
