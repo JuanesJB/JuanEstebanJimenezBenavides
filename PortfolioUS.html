@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Proyectos</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    /* Personaliza los estilos aquí */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #393E46;
+    }
+
+    .divider {
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(to right, transparent, #393E46, transparent);
+      margin: 30px 0;
+    }
+
+    .navbar {
+      background-color: #222831;
+      border-bottom: 1px solid #EEEEEE;
+    }
+
+    .navbar-name {
+      float: left;
+      font-family: 'Doctor Glitch', sans-serif;
+      font-size: 18px;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .navbar-nav .nav-link {
+      color: #EEEEEE;
+    }
+
+    .header {
+      background-color: #393E46;
+      color: #EEEEEE;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .about-me {
+      padding: 80px 0;
+      background-color: #393E46;
+      color: #EEEEEE;
+    }
+
+    .about-me .row {
+      align-items: center;
+    }
+
+    .about-me .col-lg-6 {
+      margin-bottom: 30px;
+    }
+
+    .about-me .square-image {
+      width: 100%;
+      padding-bottom: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-me .square-image img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-me p {
+      margin-bottom: 20px;
+    }
+
+    .portfolio {
+      padding: 80px 0;
+      background-color: #393E46;
+      color: #EEEEEE;
+    }
+
+    .portfolio .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      margin-bottom: 20px; /* Espacio vertical entre las cartas */
+    }
+
+    .portfolio .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio .card img {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .portfolio .card-body {
+      background-color: #222831;
+    }
+
+    .portfolio .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .portfolio .card-text {
+      margin: 0;
+    }
+
+    .contact {
+      padding: 80px 0;
+      background-color: #393E46;
+      color: #EEEEEE;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    .contact .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact .contact-info i {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .contact .contact-info .info-item {
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background-color: #222831;
+      color: #EEEEEE;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+
+
+<body>
+    <body>
+        <!-- ... -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="150" height="40" class="d-inline-block align-top">
+              </a>
+          <!-- ... -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <!-- ... -->
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="indexus.html">Main</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="aboutme.html">About me</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="https://github.com/JuanesJB" target="_blank">GitHub</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="portafolio.html" onclick="switchLanguage()">Español</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- ... -->
+      </body>
+      <script>
+        function switchLanguage() {
+          window.location.href = "index.html"; // Replace with the URL of the English version of the site
+        }
+      </script>
+
+<body>
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="text-center mb-5">Portfolio</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card wow animate__animated animate__fadeIn">
+              <img src="fantasy-soccer@2x.png" class="project-img" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Fantasy Football App</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+              <img src="wp11424574.webp" class="project-img" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Futbol Club Barcelona website</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
+              <img src="tv-logo-free-vector.jpg" class="project-img" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Series Management Application</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
+              <img src="WIP.png" class="project-img" alt="Project 4">
+              <div class="card-body">
+                <h5 class="card-title">Project 4</h5>
+                <p class="card-text">Work in Progress... </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
+              <img src="WIP.png" class="project-img" alt="Project 5">
+              <div class="card-body">
+                <h5 class="card-title">Project 5</h5>
+                <p class="card-text">Work in Progress...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card wow animate__animated animate__fadeIn" data-wow-delay="1s">
+              <img src="WIP.png" class="project-img" alt="Project 6">
+              <div class="card-body">
+                <h5 class="card-title">Project 6</h5>
+                <p class="card-text">Work in Progress...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 wow animate__animated animate__fadeInUp">
+              <h2 class="mb-4">My Social Networks</h2>
+              <p>Follow me on my social networks for my latest updates!</p>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.instagram.com/juanes_121210/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="j.jimenezb@uniandes.edu.co" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+   
+      <footer>
+        <div class="container">
+          <p class="text-center">
+            &copy; 2023 My personal website. All rights reserved.
+            <a href="j.jimenezb@uniandes.edu.co" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/juanes_121210/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/JuanesJB"><i class="fab fa-github"></i></a>
+          </p>
+        </div>
+      </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+<!-- Contenido del sitio web -->
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
